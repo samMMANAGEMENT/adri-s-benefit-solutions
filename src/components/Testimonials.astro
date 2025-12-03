@@ -1,0 +1,14 @@
+<section id="testimonios" class="section">
+  <div class="container-responsive">
+    <h2 class="text-center text-2xl sm:text-3xl font-display font-bold mb-10">Testimonios reales</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {[1,2,3].map((i) => (
+        <article class="bg-white border border-slate-200 rounded-xl p-6 text-center">
+          <img src={`https://placehold.co/200x200/EEE/AAA?text=Cliente+${i}`} alt="Cliente" class="mx-auto mb-4 rounded-full" />
+          <p class="text-slate-700">“Nos dieron tranquilidad y explicaron todo con claridad.”</p>
+          <p class="mt-2 text-slate-500 text-sm">Familia de Houston</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

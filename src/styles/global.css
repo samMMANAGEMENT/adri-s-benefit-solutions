@@ -1,0 +1,50 @@
+/* Tipografías */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Golos+Text:wght@400..900&display=swap');
+
+/* Tailwind base/components/utilities */
+@import "tailwindcss";
+
+
+@theme {
+	--font-sans: "DM Sans", system-ui, sans-serif;
+	--font-display: "Golos Text", "DM Sans", system-ui, sans-serif;
+	
+	--color-primary-1: #0E3043;
+	--color-primary-2: #C6A350;
+	--color-secondary-1: #F5F6F7;
+	--color-accent-yellow: #F5C518;
+}
+
+/* Reset y utilidades globales */
+@layer base {
+	html { scroll-behavior: smooth; }
+	body { @apply bg-white text-slate-800 font-sans; }
+	h1,h2,h3,h4,h5,h6 { @apply font-display text-slate-900; }
+}
+
+@layer utilities {
+	.container-responsive { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+	.btn-primary { @apply inline-flex items-center justify-center rounded-md 
+         bg-primary-2 text-white font-semibold px-6 py-3 shadow-sm 
+         hover:bg-primary-1 transition-colors; }
+	.section { @apply py-12 sm:py-16 lg:py-20; }
+}
+
+/* Scroll minimalista */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8a8a8a;
+}

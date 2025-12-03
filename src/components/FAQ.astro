@@ -1,0 +1,21 @@
+<section class="section bg-secondary-1">
+  <div class="container-responsive">
+    <h2 class="text-center text-2xl sm:text-3xl font-display font-bold mb-8">Preguntas frecuentes</h2>
+    <div class="max-w-3xl mx-auto divide-y divide-slate-200">
+      {[
+        {q:'¿Qué es un IUL?', a:'Un seguro de vida con componente de acumulación vinculado a índices que protege y puede crecer sin exponer tu dinero a caídas del mercado.'},
+        {q:'¿El plan funerario cubre de inmediato?', a:'Sí, ofrecemos opciones con cobertura inmediata y asistencia integral a la familia.'},
+        {q:'¿Hay costos ocultos?', a:'No. Nuestros planes son transparentes y sin letras pequeñas.'},
+        {q:'¿Puedo hablar con un asesor?', a:'Claro. Agenda una llamada y resolvemos tus dudas con empatía.'},
+      ].map((item, i) => (
+        <details class="py-4">
+          <summary class="cursor-pointer font-medium text-slate-800 flex items-center justify-between">
+            {item.q}
+            <span class="ml-4 text-slate-500">+</span>
+          </summary>
+          <p class="mt-2 text-slate-600">{item.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
