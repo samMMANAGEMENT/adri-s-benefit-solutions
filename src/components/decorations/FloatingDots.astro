@@ -1,0 +1,62 @@
+---
+interface Props {
+  class?: string;
+  count?: number;
+}
+
+const { class: className = '', count = 20 } = Astro.props;
+---
+
+<div class={`absolute inset-0 pointer-events-none overflow-hidden ${className}`}>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 1000 1000"
+    class="w-full h-full"
+  >
+    <defs>
+      <radialGradient id="dot-gradient">
+        <stop offset="0%" style="stop-color:#C6A350;stop-opacity:0.9" />
+        <stop offset="100%" style="stop-color:#C6A350;stop-opacity:0.3" />
+      </radialGradient>
+      <filter id="dot-glow">
+        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    
+    <!-- Dots con animación CSS y efecto glow -->
+    <circle cx="100" cy="150" r="4" fill="#C6A350" opacity="0.4">
+      <animate attributeName="cy" values="150;140;150" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="300" r="6" fill="url(#dot-gradient)">
+      <animate attributeName="cy" values="300;285;300" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="800" cy="200" r="5" fill="#C6A350" opacity="0.3">
+      <animate attributeName="cy" values="200;190;200" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="900" cy="400" r="4" fill="#C6A350" opacity="0.5">
+      <animate attributeName="cy" values="400;388;400" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="700" r="7" fill="url(#dot-gradient)">
+      <animate attributeName="cy" values="700;685;700" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="100" r="5" fill="#C6A350" opacity="0.4">
+      <animate attributeName="cy" values="100;92;100" dur="3.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="500" r="6" fill="url(#dot-gradient)">
+      <animate attributeName="cy" values="500;485;500" dur="4.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="750" cy="650" r="4" fill="#C6A350" opacity="0.35">
+      <animate attributeName="cy" values="650;638;650" dur="3.3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="850" r="5" fill="#C6A350" opacity="0.45">
+      <animate attributeName="cy" values="850;840;850" dur="4.7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="250" r="8" fill="url(#dot-gradient)">
+      <animate attributeName="cy" values="250;232;250" dur="5.2s" repeatCount="indefinite" />
+    </circle>
+  </svg>
+</div>

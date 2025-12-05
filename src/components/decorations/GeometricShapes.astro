@@ -1,0 +1,94 @@
+---
+interface Props {
+  class?: string;
+  variant?: 'circles' | 'hexagons' | 'triangles';
+}
+
+const { class: className = '', variant = 'circles' } = Astro.props;
+---
+
+<div class={`absolute pointer-events-none overflow-hidden ${className}`}>
+  {variant === 'circles' && (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 800 800"
+      class="w-full h-full"
+    >
+      <defs>
+        <radialGradient id="gold-glow">
+          <stop offset="0%" style="stop-color:#C6A350;stop-opacity:0.3" />
+          <stop offset="100%" style="stop-color:#C6A350;stop-opacity:0" />
+        </radialGradient>
+      </defs>
+      <circle cx="150" cy="150" r="120" fill="url(#gold-glow)" />
+      <circle cx="150" cy="150" r="80" fill="none" stroke="#C6A350" stroke-width="2" opacity="0.2" />
+      <circle cx="600" cy="400" r="150" fill="url(#gold-glow)" />
+      <circle cx="600" cy="400" r="100" fill="none" stroke="#C6A350" stroke-width="2" opacity="0.2" />
+      <circle cx="700" cy="150" r="80" fill="url(#gold-glow)" />
+    </svg>
+  )}
+
+  {variant === 'hexagons' && (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 800 800"
+      class="w-full h-full"
+    >
+      <defs>
+        <pattern id="hexagons" x="0" y="0" width="100" height="87" patternUnits="userSpaceOnUse">
+          <path 
+            d="M25,5 L75,5 L100,50 L75,82 L25,82 L0,50 Z" 
+            fill="none" 
+            stroke="#C6A350" 
+            stroke-width="1.5"
+            opacity="0.15"
+          />
+        </pattern>
+      </defs>
+      <rect width="800" height="800" fill="url(#hexagons)" />
+    </svg>
+  )}
+
+  {variant === 'triangles' && (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 800 800"
+      class="w-full h-full"
+    >
+      <defs>
+        <linearGradient id="triangle-gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#C6A350;stop-opacity:0.25" />
+          <stop offset="50%" style="stop-color:#C6A350;stop-opacity:0.12" />
+          <stop offset="100%" style="stop-color:#C6A350;stop-opacity:0" />
+        </linearGradient>
+        <linearGradient id="triangle-gradient-2" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#C6A350;stop-opacity:0.22" />
+          <stop offset="50%" style="stop-color:#C6A350;stop-opacity:0.1" />
+          <stop offset="100%" style="stop-color:#C6A350;stop-opacity:0" />
+        </linearGradient>
+        <radialGradient id="triangle-glow">
+          <stop offset="0%" style="stop-color:#C6A350;stop-opacity:0.3" />
+          <stop offset="100%" style="stop-color:#C6A350;stop-opacity:0" />
+        </radialGradient>
+      </defs>
+      
+      <polygon points="150,100 400,450 150,450" fill="url(#triangle-gradient-1)" />
+      
+      <polygon points="600,150 800,400 600,400" fill="url(#triangle-gradient-2)" />
+      
+      <polygon points="250,550 550,750 250,750" fill="url(#triangle-gradient-1)" opacity="0.9" />
+      
+      <circle cx="150" cy="100" r="40" fill="url(#triangle-glow)" />
+      <circle cx="600" cy="150" r="45" fill="url(#triangle-glow)" />
+      <circle cx="250" cy="550" r="38" fill="url(#triangle-glow)" />
+      
+      <path d="M150,100 L400,450" stroke="#C6A350" stroke-width="2" opacity="0.25" stroke-dasharray="5,10" />
+      <path d="M600,150 L800,400" stroke="#C6A350" stroke-width="2" opacity="0.25" stroke-dasharray="5,10" />
+      <path d="M250,550 L550,750" stroke="#C6A350" stroke-width="2" opacity="0.22" stroke-dasharray="5,10" />
+      
+      <polygon points="500,200 550,280 500,280" fill="#C6A350" opacity="0.15" />
+      <polygon points="100,600 140,660 100,660" fill="#C6A350" opacity="0.15" />
+      <polygon points="700,500 740,560 700,560" fill="#C6A350" opacity="0.12" />
+    </svg>
+  )}
+</div>

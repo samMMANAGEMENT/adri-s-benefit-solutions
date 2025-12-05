@@ -28,6 +28,42 @@
          bg-primary-2 text-white font-semibold px-6 py-3 shadow-sm 
          hover:bg-primary-1 transition-colors; }
 	.section { @apply py-12 sm:py-16 lg:py-20; }
+	
+	/* Animaciones para elementos decorativos */
+	.animate-float {
+		animation: float 6s ease-in-out infinite;
+	}
+	
+	.animate-pulse-slow {
+		animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	}
+	
+	/* Efecto de brillo dorado */
+	.golden-glow {
+		box-shadow: 0 0 20px rgba(198, 163, 80, 0.3),
+		            0 0 40px rgba(198, 163, 80, 0.2);
+	}
+	
+	.golden-border {
+		border: 2px solid #C6A350;
+		box-shadow: 0 0 15px rgba(198, 163, 80, 0.4);
+	}
+	
+	.golden-text {
+		color: #C6A350;
+		text-shadow: 0 0 10px rgba(198, 163, 80, 0.3);
+	}
+}
+
+/* Animaciones personalizadas */
+@keyframes float {
+	0%, 100% { transform: translateY(0px); }
+	50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.5; }
 }
 
 /* Scroll minimalista */

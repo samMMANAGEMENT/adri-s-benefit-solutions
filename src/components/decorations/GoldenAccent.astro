@@ -1,0 +1,53 @@
+---
+interface Props {
+  class?: string;
+  position?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
+}
+
+const { class: className = '', position = 'top-right' } = Astro.props;
+
+const positionClasses = {
+  'top-left': 'top-0 left-0',
+  'top-right': 'top-0 right-0',
+  'bottom-left': 'bottom-0 left-0',
+  'bottom-right': 'bottom-0 right-0',
+};
+---
+
+<div class={`absolute ${positionClasses[position]} pointer-events-none overflow-hidden ${className}`}>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 400 400"
+    class="w-64 h-64 lg:w-96 lg:h-96"
+  >
+    <defs>
+      <linearGradient id={`golden-accent-${position}`} x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#C6A350;stop-opacity:0.15" />
+        <stop offset="50%" style="stop-color:#C6A350;stop-opacity:0.08" />
+        <stop offset="100%" style="stop-color:#C6A350;stop-opacity:0" />
+      </linearGradient>
+      
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    
+    <!-- Patrón de líneas decorativas -->
+    <g opacity="0.6">
+      <line x1="50" y1="50" x2="350" y2="50" stroke="#C6A350" stroke-width="2" opacity="0.3" />
+      <line x1="50" y1="100" x2="300" y2="100" stroke="#C6A350" stroke-width="2" opacity="0.25" />
+      <line x1="50" y1="150" x2="250" y2="150" stroke="#C6A350" stroke-width="2" opacity="0.2" />
+    </g>
+    
+    <!-- Círculo brillante -->
+    <circle cx="200" cy="200" r="150" fill={`url(#golden-accent-${position})`} filter="url(#glow)" />
+    
+    <!-- Detalles geométricos -->
+    <circle cx="200" cy="200" r="80" fill="none" stroke="#C6A350" stroke-width="1.5" opacity="0.2" />
+    <circle cx="200" cy="200" r="120" fill="none" stroke="#C6A350" stroke-width="1" opacity="0.15" />
+  </svg>
+</div>

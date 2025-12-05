@@ -1,5 +1,14 @@
-<section id="contacto" class="section bg-secondary-1">
-  <div class="container-responsive grid gap-8 lg:grid-cols-2">
+---
+import FloatingDots from './decorations/FloatingDots.astro';
+import GoldenMesh from './decorations/GoldenMesh.astro';
+---
+
+<section id="contacto" class="section bg-secondary-1 relative overflow-hidden">
+  <!-- Decoraciones -->
+  <FloatingDots />
+  <GoldenMesh class="bottom-0 left-0 w-1/2 h-1/2 opacity-20" />
+  
+  <div class="container-responsive grid gap-8 lg:grid-cols-2 relative z-10">
     <div>
       <h2 class="text-2xl sm:text-3xl font-display font-bold mb-4">Ubicación y contacto</h2>
       <p class="text-slate-600 mb-4">Houston, Texas · Atención en español</p>

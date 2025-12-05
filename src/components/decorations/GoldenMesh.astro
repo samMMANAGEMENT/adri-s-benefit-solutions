@@ -1,0 +1,33 @@
+---
+interface Props {
+  class?: string;
+  opacity?: number;
+}
+
+const { class: className = '', opacity = 0.15 } = Astro.props;
+---
+
+<svg 
+  class={`absolute pointer-events-none ${className}`}
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 800 600"
+  fill="none"
+>
+  <defs>
+    <pattern id="golden-grid" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path 
+        d="M 80 0 L 0 0 0 80" 
+        fill="none" 
+        stroke="#C6A350" 
+        stroke-width="1"
+        opacity={opacity}
+      />
+    </pattern>
+    <linearGradient id="golden-fade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C6A350;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#C6A350;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#golden-grid)" />
+  <rect width="800" height="600" fill="url(#golden-fade)" />
+</svg>

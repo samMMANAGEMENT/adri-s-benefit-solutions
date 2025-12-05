@@ -1,18 +1,39 @@
-<section id="planes" class="section bg-secondary-1">
-  <div class="container-responsive">
-    <h2 class="text-center text-2xl sm:text-3xl font-display font-bold mb-10">Nuestros planes para ti y tu familia</h2>
+---
+import GeometricShapes from './decorations/GeometricShapes.astro';
+import GoldenMesh from './decorations/GoldenMesh.astro';
+import FloatingDots from './decorations/FloatingDots.astro';
+---
+
+<section id="planes" class="section bg-secondary-1 relative overflow-hidden">
+  <!-- Decoraciones de fondo -->
+  <GeometricShapes variant="hexagons" class="absolute top-0 left-0 w-full h-full opacity-40" />
+  <GoldenMesh class="absolute bottom-0 right-0 w-2/3 h-2/3 opacity-20" />
+  <FloatingDots />
+  
+  <div class="container-responsive relative z-10">
+    <h2 class="text-center text-2xl sm:text-3xl font-display font-bold mb-10">
+      Nuestros planes para ti y tu familia
+    </h2>
     <div class="grid gap-6 sm:gap-8 lg:grid-cols-2">
       <!-- Plan 1 -->
-      <article class="bg-white rounded-xl shadow-sm p-6 sm:p-8 text-center">
-        <h3 class="text-xl sm:text-2xl font-display font-bold">Plan de Retiro (IUL)</h3>
-        <p class="text-slate-600">Crece tu dinero con protección inteligente</p>
-        <img src="https://placehold.co/200x200/EEE/AAA?text=IUL" alt="Plan IUL" class="mx-auto my-6 rounded-lg" />
-        <h4 class="font-semibold mb-3">Beneficios</h4>
+      <article class="bg-white rounded-xl shadow-sm p-6 sm:p-8 text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary-2">
+        <div class="inline-block p-3 bg-primary-2/10 rounded-full mb-4">
+          <svg class="w-8 h-8 text-primary-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+          </svg>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-display font-bold text-primary-1">Plan de Retiro (IUL)</h3>
+        <p class="text-slate-600 mb-4">Crece tu dinero con protección inteligente</p>
+        <div class="relative inline-block my-6">
+          <div class="absolute inset-0 bg-primary-2/20 rounded-lg blur-xl"></div>
+          <img src="https://placehold.co/200x200/C6A350/FFFFFF?text=IUL" alt="Plan IUL" class="relative rounded-lg" />
+        </div>
+        <h4 class="font-semibold mb-3 text-primary-2">✦ Beneficios</h4>
         <ol class="text-left inline-block text-slate-700 space-y-2">
-          <li><span class="font-bold text-primary-1">01.</span> Crecimiento potencial vinculado a índices</li>
-          <li><span class="font-bold text-primary-1">02.</span> Protección contra pérdidas de mercado</li>
-          <li><span class="font-bold text-primary-1">03.</span> Beneficios en vida disponibles</li>
-          <li><span class="font-bold text-primary-1">04.</span> Flexibilidad en aportes</li>
+          <li><span class="font-bold text-primary-2">01.</span> Crecimiento potencial vinculado a índices</li>
+          <li><span class="font-bold text-primary-2">02.</span> Protección contra pérdidas de mercado</li>
+          <li><span class="font-bold text-primary-2">03.</span> Beneficios en vida disponibles</li>
+          <li><span class="font-bold text-primary-2">04.</span> Flexibilidad en aportes</li>
         </ol>
         <div class="mt-6">
           <a href="#contacto" class="btn-primary">Quiero saber cómo crece mi dinero</a>
@@ -20,18 +41,26 @@
       </article>
 
       <!-- Plan 2 -->
-      <article class="bg-white rounded-xl shadow-sm p-6 sm:p-8 text-center">
-        <h3 class="text-xl sm:text-2xl font-display font-bold">Plan Funerario</h3>
-        <p class="text-slate-600">Protege a tu familia hoy</p>
-        <img src="https://placehold.co/200x200/EEE/AAA?text=Funerario" alt="Plan Funerario" class="mx-auto my-6 rounded-lg" />
-        <h4 class="font-semibold mb-3">Beneficios</h4>
+      <article class="bg-white rounded-xl shadow-sm p-6 sm:p-8 text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary-2">
+        <div class="inline-block p-3 bg-primary-2/10 rounded-full mb-4">
+          <svg class="w-8 h-8 text-primary-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-display font-bold text-primary-1">Plan Funerario</h3>
+        <p class="text-slate-600 mb-4">Protege a tu familia hoy</p>
+        <div class="relative inline-block my-6">
+          <div class="absolute inset-0 bg-primary-2/20 rounded-lg blur-xl"></div>
+          <img src="https://placehold.co/200x200/C6A350/FFFFFF?text=Funerario" alt="Plan Funerario" class="relative rounded-lg" />
+        </div>
+        <h4 class="font-semibold mb-3 text-primary-2">✦ Beneficios</h4>
         <ol class="text-left inline-block text-slate-700 space-y-2">
-          <li><span class="font-bold text-primary-1">01.</span> Cobertura inmediata</li>
-          <li><span class="font-bold text-primary-1">02.</span> Asistencia integral a la familia</li>
-          <li><span class="font-bold text-primary-1">03.</span> Costos transparentes</li>
-          <li><span class="font-bold text-primary-1">04.</span> Red de servicios confiables</li>
-          <li><span class="font-bold text-primary-1">05.</span> Acompañamiento humano</li>
-          <li><span class="font-bold text-primary-1">06.</span> Sin letras pequeñas</li>
+          <li><span class="font-bold text-primary-2">01.</span> Cobertura inmediata</li>
+          <li><span class="font-bold text-primary-2">02.</span> Asistencia integral a la familia</li>
+          <li><span class="font-bold text-primary-2">03.</span> Costos transparentes</li>
+          <li><span class="font-bold text-primary-2">04.</span> Red de servicios confiables</li>
+          <li><span class="font-bold text-primary-2">05.</span> Acompañamiento humano</li>
+          <li><span class="font-bold text-primary-2">06.</span> Sin letras pequeñas</li>
         </ol>
         <div class="mt-6">
           <a href="#contacto" class="btn-primary">Quiero proteger a mi familia hoy</a>

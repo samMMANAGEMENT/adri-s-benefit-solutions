@@ -1,4 +1,9 @@
-<section id="inicio" class="relative section py-28">
+---
+import FloatingDots from './decorations/FloatingDots.astro';
+import GoldenAccent from './decorations/GoldenAccent.astro';
+---
+
+<section id="inicio" class="relative section py-28 overflow-hidden">
   <div class="absolute inset-0 -z-10">
     <img
       src="https://placehold.co/1600x700/0E3043/FFFFFF?text=."
@@ -7,6 +12,10 @@
     />
     <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent"></div>
   </div>
+
+  <!-- Decoraciones doradas -->
+  <FloatingDots class="z-0" />
+  <GoldenAccent position="bottom-left" class="opacity-30" />
 
   <div class="container-responsive space-y-6 lg:space-y-8">
     

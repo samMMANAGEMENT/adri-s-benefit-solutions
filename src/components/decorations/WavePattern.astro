@@ -1,0 +1,78 @@
+---
+interface Props {
+  class?: string;
+  color?: string;
+  flip?: boolean;
+  variant?: 'subtle' | 'divider' | 'decorative';
+}
+
+const { 
+  class: className = '', 
+  color = '#C6A350', 
+  flip = false,
+  variant = 'subtle'
+} = Astro.props;
+
+const transform = flip ? 'scale(1, -1)' : 'scale(1, 1)';
+
+// Generar ID único para evitar conflictos de gradientes
+const uniqueId = `wave-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+<svg 
+  class={`absolute pointer-events-none ${className}`}
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 1440 120"
+  preserveAspectRatio="none"
+  style={`transform: ${transform}`}
+>
+  <defs>
+    {variant === 'subtle' && (
+      <linearGradient id={`${uniqueId}-gradient`} x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style={`stop-color:${color};stop-opacity:0.03`} />
+        <stop offset="100%" style={`stop-color:${color};stop-opacity:0.08`} />
+      </linearGradient>
+    )}
+    {variant === 'divider' && (
+      <linearGradient id={`${uniqueId}-gradient`} x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style={`stop-color:${color};stop-opacity:0.08`} />
+        <stop offset="100%" style={`stop-color:${color};stop-opacity:0.15`} />
+      </linearGradient>
+    )}
+    {variant === 'decorative' && (
+      <linearGradient id={`${uniqueId}-gradient`} x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style={`stop-color:${color};stop-opacity:0.05`} />
+        <stop offset="50%" style={`stop-color:${color};stop-opacity:0.15`} />
+        <stop offset="100%" style={`stop-color:${color};stop-opacity:0.05`} />
+      </linearGradient>
+    )}
+  </defs>
+  
+  {variant === 'subtle' && (
+    <path 
+      d="M0,40 C240,60 480,20 720,40 C960,60 1200,20 1440,40 L1440,120 L0,120 Z" 
+      fill={`url(#${uniqueId}-gradient)`}
+    />
+  )}
+  
+  {variant === 'divider' && (
+    <path 
+      d="M0,50 C360,80 480,20 720,50 C960,80 1080,20 1440,50 L1440,120 L0,120 Z" 
+      fill={`url(#${uniqueId}-gradient)`}
+    />
+  )}
+  
+  {variant === 'decorative' && (
+    <>
+      <path 
+        d="M0,30 C360,60 480,0 720,30 C960,60 1080,0 1440,30 L1440,120 L0,120 Z" 
+        fill={`url(#${uniqueId}-gradient)`}
+      />
+      <path 
+        d="M0,60 C240,90 600,30 720,60 C840,90 1200,30 1440,60 L1440,120 L0,120 Z" 
+        fill={color}
+        opacity="0.03"
+      />
+    </>
+  )}
+</svg>
