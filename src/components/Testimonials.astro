@@ -42,7 +42,11 @@ import FloatingDots from './decorations/FloatingDots.astro';
         <article class="bg-white border-2 border-primary-1/10 rounded-xl p-6 text-center hover:border-primary-1/30 hover:shadow-lg transition-all duration-300 group">
           <div class="relative inline-block mb-4">
             <div class="absolute inset-0 bg-primary-1/10 rounded-full blur-md group-hover:bg-primary-1/20 transition-all"></div>
-            <img src={`https://placehold.co/200x200/0E3043/FFFFFF?text=Cliente+${i}`} alt="Cliente" class="relative mx-auto rounded-full border-2 border-primary-1/20" />
+            <img 
+              src={`/client${i}.jpeg`} 
+              alt={`Cliente ${i}`} 
+              class="relative mx-auto rounded-full border-2 border-primary-1/20 w-48 h-48 object-cover"
+            />
           </div>
           <div class="mb-3">
             {[1,2,3,4,5].map(() => (

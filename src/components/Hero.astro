@@ -4,27 +4,43 @@ import GoldenAccent from './decorations/GoldenAccent.astro';
 ---
 
 <section id="inicio" class="relative section py-28 overflow-hidden">
+  <!-- Slider de imágenes -->
   <div class="absolute inset-0 -z-10">
-    <img
-      src="https://placehold.co/1600x700/0E3043/FFFFFF?text=."
-      alt="Banner principal"
-      class="w-full h-full object-cover opacity-90"
-    />
-    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent"></div>
+    <div class="relative w-full h-full">
+      <img
+        src="/slider1.jpeg"
+        alt="Banner principal 1"
+        class="slider-image absolute inset-0 w-full h-full object-cover opacity-90 transition-opacity duration-1000"
+        data-slider-index="0"
+      />
+      <img
+        src="/slider2.jpeg"
+        alt="Banner principal 2"
+        class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        data-slider-index="1"
+      />
+      <img
+        src="/slider3.jpg"
+        alt="Banner principal 3"
+        class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        data-slider-index="2"
+      />
+    </div>
+    <div class="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black/20"></div>
   </div>
 
   <!-- Decoraciones doradas -->
-  <FloatingDots class="z-0" />
-  <GoldenAccent position="bottom-left" class="opacity-30" />
+  <FloatingDots class="z-0 opacity-80" count={20} />
+  <GoldenAccent position="bottom-left" class="opacity-40" />
 
   <div class="container-responsive space-y-6 lg:space-y-8">
     
-    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight max-w-4xl tracking-tight">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight max-w-4xl tracking-tight drop-shadow-2xl [text-shadow:_2px_2px_8px_rgb(0_0_0_/_80%)]">
       Nadie planea una emergencia...
-      <span class="block mt-1 lg:mt-2 text-white/90 font-light">Pero todos merecen estar preparados.</span>
+      <span class="block mt-1 lg:mt-2 text-white font-light">Pero todos merecen estar preparados.</span>
     </h1>
 
-    <p class="text-white/90 text-xl sm:text-2xl leading-relaxed max-w-3xl font-light">
+    <p class="text-white text-xl sm:text-2xl leading-relaxed max-w-3xl font-light drop-shadow-lg [text-shadow:_1px_1px_6px_rgb(0_0_0_/_70%)]">
       Cada día, familias latinas en Houston se preguntan:
       <span class="font-semibold text-white">"Si algo me pasa, ¿qué haría mi familia?"</span>
     </p>
@@ -37,3 +53,24 @@ import GoldenAccent from './decorations/GoldenAccent.astro';
 
   </div>
 </section>
+
+<script>
+  // Slider automático cada 8 segundos
+  let currentSlide = 0;
+  const slides = document.querySelectorAll<HTMLImageElement>('.slider-image');
+  const totalSlides = slides.length;
+
+  function changeSlide() {
+    // Ocultar la imagen actual
+    slides[currentSlide].style.opacity = '0';
+    
+    // Avanzar al siguiente slide
+    currentSlide = (currentSlide + 1) % totalSlides;
+    
+    // Mostrar la nueva imagen
+    slides[currentSlide].style.opacity = '0.9';
+  }
+
+  // Cambiar imagen cada 8 segundos (8000ms)
+  setInterval(changeSlide, 8000);
+</script>
