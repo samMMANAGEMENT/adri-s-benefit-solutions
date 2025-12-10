@@ -1,0 +1,223 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FloatingDots from "../components/decorations/FloatingDots.astro";
+---
+
+<Layout>
+  <Header />
+
+  <!-- Hero Section -->
+  <section class="relative section py-28 text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/funeral1.jpeg" alt="Familia recibiendo apoyo en un servicio funerario" class="w-full h-full object-cover" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-1/90 via-primary-1/80 to-primary-1/70"></div>
+    </div>
+    <FloatingDots class="opacity-40" />
+    <div class="container-responsive relative z-10 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-tight drop-shadow-xl text-white">
+          El amor también se demuestra dejando todo en orden
+        </h1>
+        <p class="text-xl text-white/90 font-light">Cuando llegue el momento, tu familia solo debería preocuparse por sanar, no por pagar.</p>
+        <p class="text-lg text-white/85 font-medium">
+          Nuestros planes funerarios cubren gastos finales y acompañan a tus seres queridos en los momentos más difíciles.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/15 rounded-full border border-white/20 text-sm font-semibold">💙 Sin exámenes médicos</span>
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/15 rounded-full border border-white/20 text-sm font-semibold">🕑 Respuesta 24/7</span>
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/15 rounded-full border border-white/20 text-sm font-semibold">🌎 Traslados y repatriación</span>
+        </div>
+      </div>
+      <div class="lg:col-span-5 bg-white/90 text-primary-1 p-6 rounded-2xl shadow-2xl backdrop-blur space-y-4">
+        <h2 class="text-2xl font-display font-bold">Protege a quienes amas</h2>
+        <p class="text-slate-700">
+          Planes simples, claros y accesibles para que tu familia esté tranquila, sin deudas ni trámites complicados.
+        </p>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-3">
+            <span class="text-primary-2 text-xl">✓</span>
+            <span>Servicio funerario completo y asistencia legal</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-primary-2 text-xl">✓</span>
+            <span>Traslados locales o repatriación según el plan</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-primary-2 text-xl">✓</span>
+            <span>Cobertura inmediata y atención 24/7</span>
+          </li>
+        </ul>
+        <a href="#cotiza" class="inline-flex justify-center items-center gap-2 px-5 py-3 bg-primary-1 text-white font-semibold rounded-lg shadow-lg hover:bg-primary-1/90 transition-all">
+          Cotizar mi plan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenido Principal -->
+  <section class="section bg-white">
+    <div class="container-responsive max-w-5xl space-y-12">
+      <div class="bg-secondary-1 p-8 rounded-2xl shadow-sm border border-primary-1/10 text-center">
+        <h2 class="text-2xl sm:text-3xl font-display font-bold text-primary-1 mb-4">El dolor de una pérdida no debería convertirse en una carga económica.</h2>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Cada día, familias latinas enfrentan gastos funerarios inesperados que superan los $10,000. Muchos deben endeudarse o pedir ayuda. Nuestros planes <strong>evitan ese peso financiero</strong> y aseguran que, en ese momento tan difícil, tu familia esté tranquila, protegida y acompañada.
+        </p>
+      </div>
+
+      <div class="bg-white border border-primary-1/10 rounded-2xl shadow-sm p-8 space-y-4">
+        <h2 class="text-3xl font-display font-bold text-primary-1 text-center">¿Qué es un plan funerario?</h2>
+        <p class="text-lg text-slate-700 text-center leading-relaxed">
+          Un <strong>plan funerario</strong> es una protección económica diseñada para cubrir <strong>todos los gastos relacionados con el fallecimiento de una persona</strong>, evitando que su familia tenga que asumir esa carga emocional y financiera en un momento tan difícil. Es una forma de asegurar tranquilidad, orden y respaldo cuando más se necesita.
+        </p>
+      </div>
+
+      <div class="bg-secondary-1 p-8 rounded-2xl border border-primary-1/10 shadow-sm space-y-4">
+        <h2 class="text-3xl font-display font-bold text-primary-1 text-center">¿Qué cubre un plan funerario?</h2>
+        <p class="text-lg text-slate-700 text-center">Más que un seguro... es tranquilidad y acompañamiento para tu familia cuando más lo necesita.</p>
+        <p class="text-lg text-slate-700 text-center">En <strong>Adri's Benefit Solutions</strong>, nuestros planes están diseñados para que tu familia <strong>no tenga que preocuparse por nada.</strong></p>
+        <p class="text-lg text-primary-1 font-semibold text-center">Incluye:</p>
+        <div class="grid sm:grid-cols-2 gap-4 text-slate-700">
+          <div class="flex gap-3 items-start"><span class="text-xl">🚐</span><p><strong>Traslado del cuerpo</strong> dentro o fuera del país (según el plan).</p></div>
+          <div class="flex gap-3 items-start"><span class="text-xl">⚰️</span><p><strong>Gastos del funeral completo:</strong> ataúd, preparación, velación y servicio.</p></div>
+          <div class="flex gap-3 items-start"><span class="text-xl">📜</span><p><strong>Asistencia legal y documentación.</strong></p></div>
+          <div class="flex gap-3 items-start"><span class="text-xl">💬</span><p><strong>Atención y acompañamiento 24/7</strong> para familiares durante todo el proceso.</p></div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-primary-1/10 rounded-2xl shadow-sm p-8 space-y-6">
+        <h2 class="text-3xl font-display font-bold text-primary-1 text-center">¿Cómo funciona un plan funerario?</h2>
+        <div class="space-y-5 text-slate-700">
+          <div class="flex gap-3 items-start">
+            <span class="w-8 h-8 rounded-full bg-primary-2/20 text-primary-2 font-bold flex items-center justify-center">1</span>
+            <p><strong>Eliges tu plan ideal.</strong> Con la ayuda de Adri's Benefit Solutions, eliges la cobertura que se ajusta a ti (individual, pareja o familiar).</p>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="w-8 h-8 rounded-full bg-primary-2/20 text-primary-2 font-bold flex items-center justify-center">2</span>
+            <p><strong>Pagas una mensualidad fija y accesible.</strong> Desde solo $25 al mes por una cremación directa. Otros planes disponibles sin exámenes médicos ni trámites complejos.</p>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="w-8 h-8 rounded-full bg-primary-2/20 text-primary-2 font-bold flex items-center justify-center">3</span>
+            <p><strong>Desde el momento de la afiliación, tu familia queda protegida.</strong> La cobertura es inmediata, brindando tranquilidad desde el primer día.</p>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="w-8 h-8 rounded-full bg-primary-2/20 text-primary-2 font-bold flex items-center justify-center">4</span>
+            <p><strong>Cuando llega el momento (ojalá muy lejano):</strong> Tu familia llama al número de atención 24/7, y el equipo se encarga de todo, sin papeleos ni gastos inesperados.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-primary-2/10 border-l-4 border-primary-2 p-6 rounded-r-xl text-center">
+        <h3 class="text-2xl font-bold text-primary-1 mb-2">No dejes una carga, deja amor y tranquilidad.</h3>
+        <p class="text-lg text-slate-700 font-semibold">❤️ Agenda tu asesoría gratuita hoy y protege a quienes más amas.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-8 items-start">
+        <div class="lg:col-span-3 bg-secondary-1 p-8 rounded-2xl shadow-lg border border-primary-1/10" id="cotiza">
+          <h2 class="text-3xl font-display font-bold text-primary-1 mb-2">Cotiza tu plan funerario</h2>
+          <p class="text-slate-600 mb-6">Completa el formulario y te contactaremos con una propuesta adaptada a tu familia.</p>
+
+          <form id="funeralForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="nombre" class="block font-bold text-primary-1 mb-2">Nombre Completo *</label>
+                <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre completo" class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors" />
+              </div>
+              <div>
+                <label for="nacimiento" class="block font-bold text-primary-1 mb-2">Fecha de Nacimiento *</label>
+                <input id="nacimiento" name="nacimiento" type="date" required class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors" />
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="telefono" class="block font-bold text-primary-1 mb-2">Número de teléfono *</label>
+                <input id="telefono" name="telefono" type="tel" required placeholder="(713) 000-0000" class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors" />
+              </div>
+              <div>
+                <label for="email" class="block font-bold text-primary-1 mb-2">Correo electrónico *</label>
+                <input id="email" name="email" type="email" required placeholder="tu@email.com" class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors" />
+              </div>
+            </div>
+
+            <div>
+              <label for="direccion" class="block font-bold text-primary-1 mb-2">Dirección *</label>
+              <input id="direccion" name="direccion" type="text" required placeholder="Calle, ciudad, estado" class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors" />
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="personas" class="block font-bold text-primary-1 mb-2">Personas a cubrir *</label>
+                <input id="personas" name="personas" type="number" min="1" required placeholder="Ej. 3" class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors" />
+              </div>
+              <div>
+                <label for="pais" class="block font-bold text-primary-1 mb-2">País de origen *</label>
+                <input id="pais" name="pais" type="text" required placeholder="País" class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors" />
+              </div>
+            </div>
+
+            <div>
+              <label for="plan" class="block font-bold text-primary-1 mb-2">Plan de interés *</label>
+              <select id="plan" name="plan" required class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors">
+                <option value="">Selecciona una opción</option>
+                <option value="cremacion">Cremación</option>
+                <option value="entierro">Entierro</option>
+                <option value="repatriacion">Repatriación</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="comentarios" class="block font-bold text-primary-1 mb-2">Comentarios adicionales</label>
+              <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos si tienes requisitos especiales" class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors"></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full bg-primary-1 hover:bg-primary-1/90 text-white font-bold py-4 rounded-lg transition-all shadow-lg hover:shadow-xl text-lg">
+                Solicitar mi propuesta
+              </button>
+              <p class="text-xs text-slate-500 text-center mt-3">* Campos obligatorios. Tu información será tratada de forma confidencial.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <img
+            src="/funeral2.jpeg"
+            alt="Servicio funerario con flores y acompañamiento"
+            class="w-full h-72 object-cover rounded-2xl shadow-xl"
+            loading="lazy"
+          />
+          <div class="bg-primary-1 text-white p-6 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-display font-bold mb-3 text-white">Acompañamos a tu familia de principio a fin</h3>
+            <p class="text-white/90">Coordinamos traslados, trámites y ceremonias para que tus seres queridos solo se enfoquen en sanar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script>
+  const funeralForm = document.getElementById("funeralForm") as HTMLFormElement | null;
+
+  if (funeralForm) {
+    funeralForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(funeralForm));
+      console.log("Datos del formulario funerario:", data);
+      alert("¡Gracias! Recibimos tu solicitud y te contactaremos muy pronto.");
+      funeralForm.reset();
+    });
+  }
+</script>
+
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+</style>
