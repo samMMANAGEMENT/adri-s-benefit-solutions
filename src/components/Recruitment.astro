@@ -1,0 +1,129 @@
+---
+import GoldenMesh from './decorations/GoldenMesh.astro';
+import FloatingDots from './decorations/FloatingDots.astro';
+---
+
+<section class="section bg-slate-900 relative overflow-hidden text-white">
+  <!-- Decoraciones de fondo -->
+  <GoldenMesh class="absolute bottom-0 right-0 w-2/3 h-2/3 opacity-15" />
+  <FloatingDots class="opacity-20" />
+
+  <div class="container-responsive relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="inline-block p-3 bg-primary-2/20 rounded-full mb-6">
+        <span class="text-3xl">💛</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-display font-bold mb-4">
+        ÚNETE A ADRI'S BENEFIT SOLUTIONS
+      </h2>
+      <p class="text-xl sm:text-2xl text-primary-2 font-light mb-6">
+        Una oportunidad real para crecer profesional y personalmente
+      </p>
+      <p class="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+        En Adri's Benefit Solutions buscamos personas con actitud, compromiso y deseo de superación. 
+        Si quieres estabilidad, ingresos crecientes y un trabajo con propósito, este puede ser tu lugar.
+      </p>
+    </div>
+
+    <!-- Divider -->
+    <div class="my-12 h-px bg-gradient-to-r from-transparent via-primary-2/30 to-transparent"></div>
+
+    <!-- Beneficios -->
+    <div class="mb-12">
+      <h3 class="text-2xl sm:text-3xl text-primary-2 font-display font-bold text-center mb-10">
+        <span class="">🚀</span> ¿Qué ofrecemos a nuestro equipo?
+      </h3>
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <!-- Beneficio 1 -->
+        <div class="bg-white/5 backdrop-blur-sm border border-primary-2/20 p-6 rounded-lg hover:border-primary-2/40 transition-colors">
+          <div class="flex gap-4 items-start">
+            <span class="text-3xl shrink-0">✨</span>
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2">Capacitación gratuita y continua</h4>
+              <p class="text-white/80">
+                Formación diaria y completa, ideal para quienes inicien sin experiencia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beneficio 2 -->
+        <div class="bg-white/5 backdrop-blur-sm border border-primary-2/20 p-6 rounded-lg hover:border-primary-2/40 transition-colors">
+          <div class="flex gap-4 items-start">
+            <span class="text-3xl shrink-0">💛</span>
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2">Mentoría personalizada y acompañamiento constante</h4>
+              <p class="text-white/80">
+                No estarás sola(o); te guiamos paso a paso en tu crecimiento profesional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beneficio 3 -->
+        <div class="bg-white/5 backdrop-blur-sm border border-primary-2/20 p-6 rounded-lg hover:border-primary-2/40 transition-colors">
+          <div class="flex gap-4 items-start">
+            <span class="text-3xl shrink-0">🏠</span>
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2">Flexibilidad total de horarios</h4>
+              <p class="text-white/80">
+                Trabaja desde casa o desde cualquier lugar de tu preferencia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beneficio 4 -->
+        <div class="bg-white/5 backdrop-blur-sm border border-primary-2/20 p-6 rounded-lg hover:border-primary-2/40 transition-colors">
+          <div class="flex gap-4 items-start">
+            <span class="text-3xl shrink-0">🎖️</span>
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2">Apoyo para obtener tu licencia estatal</h4>
+              <p class="text-white/80">
+                Te acompañamos durante todo el proceso hasta estar 100% certificado(a).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beneficio 5 -->
+        <div class="bg-white/5 backdrop-blur-sm border border-primary-2/20 p-6 rounded-lg hover:border-primary-2/40 transition-colors">
+          <div class="flex gap-4 items-start">
+            <span class="text-3xl shrink-0">🏆</span>
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2">Ingresos escalables, bonos, viajes e incentivos</h4>
+              <p class="text-white/80">
+                Reconocemos tu esfuerzo y celebramos tus logros con premios reales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beneficio 6 -->
+        <div class="bg-white/5 backdrop-blur-sm border border-primary-2/20 p-6 rounded-lg hover:border-primary-2/40 transition-colors">
+          <div class="flex gap-4 items-start">
+            <span class="text-3xl shrink-0">💧</span>
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2">Un equipo hispano unido que impulsa tu éxito</h4>
+              <p class="text-white/80">
+                Trabajarás con personas que comparten tu visión, valores y deseos de crecer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-12">
+      <p class="text-xl text-white/90 mb-6">
+        Si te identificas con este perfil, <span class="text-primary-2 font-semibold">¡queremos conocerte!</span>
+      </p>
+      <a href="/#contacto" class="btn-primary text-lg px-8 py-4">
+        Envíame más información sobre las oportunidades
+      </a>
+    </div>
+  </div>
+</section>
