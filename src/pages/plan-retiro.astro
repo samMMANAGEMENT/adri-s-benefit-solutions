@@ -9,7 +9,16 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
   <Header />
   
   <!-- Hero Section -->
-  <section class="relative section py-32 bg-linear-to-br from-primary-1 to-primary-1/90 text-white overflow-hidden">
+  <section class="relative section py-32 text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img 
+        src="/plan_retiro_bg.jpeg" 
+        alt="Familia planificando retiro seguro" 
+        class="w-full h-full object-cover" 
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-1/90 via-primary-1/85 to-primary-1/75"></div>
+    </div>
     <FloatingDots class="opacity-40" />
     <div class="container-responsive relative z-10">
       <a href="/" class="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
@@ -26,16 +35,16 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
         </div>
         
         <div class="mb-8">
-          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-2 drop-shadow-lg leading-tight">
-            Ahorra sin perder
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-2 drop-shadow-lg text-white leading-tight">
+            Crecimiento indexado al S&P 500
           </h1>
           <p class="text-3xl sm:text-4xl font-light text-primary-2 drop-shadow-lg">
-            Crece sin límites
+            Protección cuando el mercado baja
           </p>
         </div>
         
         <p class="text-xl sm:text-2xl text-white/90 font-light drop-shadow-lg">
-          Tu familia merece tranquilidad, no deudas.
+          Haz que tu dinero trabaje por tu futuro, no en tu contra.
         </p>
       </div>
     </div>
@@ -124,22 +133,75 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
         <div class="space-y-6 bg-secondary-1 p-8 rounded-xl">
           <div>
-            <h3 class="text-xl font-bold text-primary-1 mb-3">Tu dinero se pone a trabajar por ti.</h3>
-            <div class="space-y-4 text-slate-700">
+            <h3 class="text-xl font-bold text-primary-1 mb-3">Tu dinero se pone a trabajar por ti</h3>
+            
+            <div class="bg-white/60 p-6 rounded-lg mb-6">
+              <p class="text-slate-700 leading-relaxed mb-4">
+                En un <strong>IUL (Indexed Universal Life)</strong>, tu dinero <strong>no se invierte directamente en la bolsa</strong>. 
+                En su lugar, tu crecimiento está ligado al desempeño del índice <strong>S&P 500</strong>, que representa a las 
+                <strong>500 empresas más grandes de Estados Unidos</strong>.
+              </p>
+              
+              <div class="bg-white rounded-lg p-6 shadow-sm border-2 border-primary-1/10 space-y-4">
+                <div class="flex gap-3 items-start">
+                  <span class="text-2xl shrink-0">👉</span>
+                  <p class="text-slate-700 leading-relaxed">
+                    <strong>Si el S&P 500 sube</strong>, tu cuenta puede crecer hasta un <strong>límite máximo (cap)</strong> 
+                    establecido por la aseguradora.
+                  </p>
+                </div>
+                
+                <div class="flex gap-3 items-start">
+                  <span class="text-2xl shrink-0">👉</span>
+                  <p class="text-slate-700 leading-relaxed">
+                    <strong>Si el S&P 500 baja</strong>, no pierdes dinero, porque el IUL tiene un 
+                    <strong>piso de protección (floor)</strong>, generalmente del <strong>0%</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-4 text-slate-700 mb-6">
               <p>
                 <span class="font-semibold text-primary-1">Cuando la economía del país va bien, </span>
-                <span class="font-bold">tu dinero crece más rápido</span>. Sigues el crecimiento de índices como el S&P 500.
+                <span class="font-bold">tu dinero crece más rápido</span>, siguiendo el crecimiento del S&P 500.
               </p>
               
               <p>
                 <span class="font-semibold text-primary-1">Y si el mercado baja, </span>
-                <span class="font-bold">tu dinero no se pierde</span>, simplemente se mantiene igual hasta que vuelva a subir.
+                <span class="font-bold">tu dinero no se pierde</span>—simplemente se mantiene igual hasta que vuelva a subir.
               </p>
               
               <p class="text-base leading-relaxed">
                 Así, mes a mes vas construyendo un fondo que te sirve para el futuro, para emergencias o para dejar un legado a tus hijos.
               </p>
             </div>
+
+            <div class="bg-slate-800 text-white p-6 rounded-lg">
+              <h4 class="text-lg font-bold mb-4 text-white">En resumen sencillo:</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl shrink-0">📈</span>
+                  <span><strong>Participas del crecimiento del mercado</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl shrink-0">🛡️</span>
+                  <span><strong>Estás protegido contra pérdidas</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl shrink-0">🔒</span>
+                  <span><strong>Tu dinero crece de forma segura</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl shrink-0">💎</span>
+                  <span><strong>Mantienes un seguro de vida activo</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <p class="text-lg font-semibold text-primary-1 mt-6 bg-primary-2/10 p-4 rounded-lg border-l-4 border-primary-2">
+              Con un IUL, aprovechas el crecimiento del S&P 500 sin arriesgar tu dinero cuando el mercado cae.
+            </p>
           </div>
         </div>
       </div>
