@@ -7,44 +7,73 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
 <Layout>
   <Header />
-  
+
   <!-- Hero Section -->
   <section class="relative section py-32 text-white overflow-hidden">
     <div class="absolute inset-0">
-      <img 
-        src="/plan_retiro_bg.jpeg" 
-        alt="Familia planificando retiro seguro" 
-        class="w-full h-full object-cover" 
+      <img
+        src="/plan_retiro_bg.jpeg"
+        alt="Familia planificando retiro seguro"
+        class="w-full h-full object-cover"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-gradient-to-br from-primary-1/90 via-primary-1/85 to-primary-1/75"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-primary-1/90 via-primary-1/85 to-primary-1/75"
+      >
+      </div>
     </div>
     <FloatingDots class="opacity-40" />
     <div class="container-responsive relative z-10">
-      <a href="/" class="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
-        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      <a
+        href="/"
+        class="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors"
+      >
+        <svg
+          class="w-5 h-5 mr-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"></path>
         </svg>
         Volver al inicio
       </a>
       <div class="max-w-4xl">
         <div class="inline-block p-4 bg-primary-2/20 rounded-full mb-8">
-          <svg class="w-12 h-12 text-primary-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+          <svg
+            class="w-12 h-12 text-primary-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
           </svg>
         </div>
-        
+
         <div class="mb-8">
-          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-2 drop-shadow-lg text-white leading-tight">
+          <h1
+            class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-2 drop-shadow-lg text-white leading-tight"
+          >
             Crecimiento indexado al S&P 500
           </h1>
-          <p class="text-3xl sm:text-4xl font-light text-primary-2 drop-shadow-lg">
+          <p
+            class="text-3xl sm:text-4xl font-light text-primary-2 drop-shadow-lg"
+          >
             Protección cuando el mercado baja
           </p>
         </div>
-        
+
         <p class="text-xl sm:text-2xl text-white/90 font-light drop-shadow-lg">
-          Haz que tu dinero trabaje por tu futuro, no en tu contra.
+          Una estrategia inteligente que combina crecimiento y protección para
+          tu futuro.
         </p>
       </div>
     </div>
@@ -53,78 +82,129 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
   <!-- Contenido Principal -->
   <section class="section bg-white">
     <div class="container-responsive max-w-5xl">
-      
       <!-- ¿Qué es el Plan IUL? -->
       <div class="mb-16">
-        <h2 class="text-3xl font-display font-bold text-primary-1 mb-8">¿Qué es el Plan de Retiro IUL?</h2>
-        
+        <h2 class="text-3xl font-display font-bold text-primary-1 mb-8">
+          ¿Qué es el Plan de Retiro IUL?
+        </h2>
+        <p class="text-lg text-slate-700 mb-8">
+          El IUL no es solo un seguro de vida ni solo plan de retiro. Es una
+          estrategia integral de protección y crecimiento, que cuida tu dinero,
+          tu salud, tu familia y tu futuro.
+          <br />
+          <br />
+          protege tu esfuerzo. Cuida tu salud. Asegura tu retiro.
+        </p>
+
         <div class="prose prose-lg max-w-none">
           <p class="text-lg text-slate-700 leading-relaxed mb-6">
-            Imagina un plan que te deja dormir tranquilo sabiendo que tu dinero está creciendo, protegido y trabajando para tu futuro. 
-            El <strong>Indexed Universal Life (IUL)</strong> es exactamente eso: un seguro de vida que <strong>combina tres cosas que todos queremos</strong>:
+            Imagina un plan que te deja dormir tranquilo sabiendo que tu dinero
+            está creciendo, protegido y trabajando para tu futuro. El <strong
+              >Indexed Universal Life (IUL)</strong
+            > es exactamente eso: un seguro de vida que <strong
+              >combina tres cosas que todos queremos</strong
+            >:
           </p>
 
           <div class="space-y-4 mb-8">
             <div class="flex gap-4 items-start">
               <div class="text-3xl">🛡️</div>
               <div>
-                <h3 class="font-bold text-primary-1 text-lg">Protección para tu familia</h3>
-                <p class="text-slate-700 mt-1">Si algo te sucede, tus seres queridos reciben un beneficio asegurado inmediatamente.</p>
+                <h3 class="font-bold text-primary-1 text-lg">
+                  Protección para tu familia
+                </h3>
+                <p class="text-slate-700 mt-1">
+                  Si algo te sucede, tus seres queridos reciben un beneficio
+                  asegurado inmediatamente.
+                </p>
               </div>
             </div>
-            
+
             <div class="flex gap-4 items-start">
               <div class="text-3xl">📈</div>
               <div>
-                <h3 class="font-bold text-primary-1 text-lg">Ahorro inteligente</h3>
-                <p class="text-slate-700 mt-1">Tu dinero crece vinculado a índices del mercado, como el S&P 500, sin los riesgos de invertir directamente.</p>
+                <h3 class="font-bold text-primary-1 text-lg">
+                  Ahorro inteligente
+                </h3>
+                <p class="text-slate-700 mt-1">
+                  Tu dinero crece vinculado a índices del mercado, como el S&P
+                  500, sin los riesgos de invertir directamente.
+                </p>
               </div>
             </div>
 
             <div class="flex gap-4 items-start">
               <div class="text-3xl">🔐</div>
               <div>
-                <h3 class="font-bold text-primary-1 text-lg">Seguridad garantizada</h3>
-                <p class="text-slate-700 mt-1">Cuando el mercado baja, tu dinero no pierde valor. Está protegido desde el primer día.</p>
+                <h3 class="font-bold text-primary-1 text-lg">
+                  Seguridad garantizada
+                </h3>
+                <p class="text-slate-700 mt-1">
+                  Cuando el mercado baja, tu dinero no pierde valor. Está
+                  protegido desde el primer día.
+                </p>
               </div>
             </div>
           </div>
 
           <p class="text-lg text-slate-700 leading-relaxed mb-8">
-            En pocas palabras: <strong>es tu socio para construir un futuro financiero seguro</strong>, sin las preocupaciones de perder 
-            lo que has trabajado tan duro para ganar.
+            En pocas palabras: <strong
+              >es tu socio para construir un futuro financiero seguro</strong
+            >, sin las preocupaciones de perder lo que has trabajado tan duro
+            para ganar.
           </p>
         </div>
       </div>
 
       <!-- ¿Cómo funciona el IUL? -->
       <div class="mb-16">
-        <h2 class="text-3xl font-display font-bold text-primary-1 mb-8">¿Cómo funciona el IUL?</h2>
-        
-        <div class="bg-primary-1/5 border-l-4 border-primary-1 p-8 rounded-r-lg mb-8">
-          <p class="text-lg font-semibold text-primary-1 mb-4">Cada mes haces un pago que se divide en dos partes:</p>
-          
+        <h2 class="text-3xl font-display font-bold text-primary-1 mb-8">
+          ¿Cómo funciona el IUL?
+        </h2>
+
+        <div
+          class="bg-primary-1/5 border-l-4 border-primary-1 p-8 rounded-r-lg mb-8"
+        >
+          <p class="text-lg font-semibold text-primary-1 mb-4">
+            Cada mes haces un pago que se divide en dos partes:
+          </p>
+
           <div class="space-y-6">
             <div class="flex gap-4">
               <div class="shrink-0">
-                <div class="w-12 h-12 bg-primary-2/20 rounded-full flex items-center justify-center text-primary-2 font-bold text-lg">🛡️</div>
+                <div
+                  class="w-12 h-12 bg-primary-2/20 rounded-full flex items-center justify-center text-primary-2 font-bold text-lg"
+                >
+                  🛡️
+                </div>
               </div>
               <div>
-                <h3 class="font-bold text-primary-1 text-lg mb-2">Una parte te protege a ti y a tu familia</h3>
+                <h3 class="font-bold text-primary-1 text-lg mb-2">
+                  Una parte te protege a ti y a tu familia
+                </h3>
                 <p class="text-slate-700">
-                  Funciona como un seguro de vida que garantiza tranquilidad hoy. Si algo te sucede, tu familia tendrá seguridad financiera inmediata.
+                  Funciona como un seguro de vida que garantiza tranquilidad
+                  hoy. Si algo te sucede, tu familia tendrá seguridad financiera
+                  inmediata.
                 </p>
               </div>
             </div>
 
             <div class="flex gap-4">
               <div class="shrink-0">
-                <div class="w-12 h-12 bg-primary-2/20 rounded-full flex items-center justify-center text-primary-2 font-bold text-lg">💰</div>
+                <div
+                  class="w-12 h-12 bg-primary-2/20 rounded-full flex items-center justify-center text-primary-2 font-bold text-lg"
+                >
+                  💰
+                </div>
               </div>
               <div>
-                <h3 class="font-bold text-primary-1 text-lg mb-2">La otra parte se ahorra y crece con el tiempo</h3>
+                <h3 class="font-bold text-primary-1 text-lg mb-2">
+                  La otra parte se ahorra y crece con el tiempo
+                </h3>
                 <p class="text-slate-700">
-                  Es como una alcancía inteligente que nunca pierde valor. Tu dinero trabaja para ti, mes a mes.
+                  Es como una alcancía inteligente que nunca pierde valor. Tu
+                  dinero trabaja para ti, mes a mes.
                 </p>
               </div>
             </div>
@@ -133,29 +213,38 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
         <div class="space-y-6 bg-secondary-1 p-8 rounded-xl">
           <div>
-            <h3 class="text-xl font-bold text-primary-1 mb-3">Tu dinero se pone a trabajar por ti</h3>
-            
+            <h3 class="text-xl font-bold text-primary-1 mb-3">
+              Tu dinero se pone a trabajar por ti
+            </h3>
+
             <div class="bg-white/60 p-6 rounded-lg mb-6">
               <p class="text-slate-700 leading-relaxed mb-4">
-                En un <strong>IUL (Indexed Universal Life)</strong>, tu dinero <strong>no se invierte directamente en la bolsa</strong>. 
-                En su lugar, tu crecimiento está ligado al desempeño del índice <strong>S&P 500</strong>, que representa a las 
+                En un <strong>IUL (Indexed Universal Life)</strong>, tu dinero <strong
+                  >no se invierte directamente en la bolsa</strong
+                >. En su lugar, tu crecimiento está ligado al desempeño del
+                índice <strong>S&P 500</strong>, que representa a las
                 <strong>500 empresas más grandes de Estados Unidos</strong>.
               </p>
-              
-              <div class="bg-white rounded-lg p-6 shadow-sm border-2 border-primary-1/10 space-y-4">
+
+              <div
+                class="bg-white rounded-lg p-6 shadow-sm border-2 border-primary-1/10 space-y-4"
+              >
                 <div class="flex gap-3 items-start">
                   <span class="text-2xl shrink-0">👉</span>
                   <p class="text-slate-700 leading-relaxed">
-                    <strong>Si el S&P 500 sube</strong>, tu cuenta puede crecer hasta un <strong>límite máximo (cap)</strong> 
+                    <strong>Si el S&P 500 sube</strong>, tu cuenta puede crecer
+                    hasta un <strong>límite máximo (cap)</strong>
                     establecido por la aseguradora.
                   </p>
                 </div>
-                
+
                 <div class="flex gap-3 items-start">
                   <span class="text-2xl shrink-0">👉</span>
                   <p class="text-slate-700 leading-relaxed">
-                    <strong>Si el S&P 500 baja</strong>, no pierdes dinero, porque el IUL tiene un 
-                    <strong>piso de protección (floor)</strong>, generalmente del <strong>0%</strong>.
+                    <strong>Si el S&P 500 baja</strong>, no pierdes dinero,
+                    porque el IUL tiene un
+                    <strong>piso de protección (floor)</strong>, generalmente
+                    del <strong>0%</strong>.
                   </p>
                 </div>
               </div>
@@ -163,26 +252,38 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
             <div class="space-y-4 text-slate-700 mb-6">
               <p>
-                <span class="font-semibold text-primary-1">Cuando la economía del país va bien, </span>
-                <span class="font-bold">tu dinero crece más rápido</span>, siguiendo el crecimiento del S&P 500.
+                <span class="font-semibold text-primary-1"
+                  >Cuando la economía del país va bien,
+                </span>
+                <span class="font-bold">tu dinero crece más rápido</span>,
+                siguiendo el crecimiento del S&P 500.
               </p>
-              
+
               <p>
-                <span class="font-semibold text-primary-1">Y si el mercado baja, </span>
-                <span class="font-bold">tu dinero no se pierde</span>—simplemente se mantiene igual hasta que vuelva a subir.
+                <span class="font-semibold text-primary-1"
+                  >Y si el mercado baja,
+                </span>
+                <span class="font-bold">tu dinero no se pierde</span
+                >—simplemente se mantiene igual hasta que vuelva a subir.
               </p>
-              
+
               <p class="text-base leading-relaxed">
-                Así, mes a mes vas construyendo un fondo que te sirve para el futuro, para emergencias o para dejar un legado a tus hijos.
+                Así, mes a mes vas construyendo un fondo que te sirve para el
+                futuro, para emergencias o para dejar un legado a tus hijos.
               </p>
             </div>
 
             <div class="bg-slate-800 text-white p-6 rounded-lg">
-              <h4 class="text-lg font-bold mb-4 text-white">En resumen sencillo:</h4>
+              <h4 class="text-lg font-bold mb-4 text-white">
+                En resumen sencillo:
+              </h4>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
                   <span class="text-2xl shrink-0">📈</span>
-                  <span><strong>Participas del crecimiento del mercado</strong></span>
+                  <span
+                    ><strong>Participas del crecimiento del mercado</strong
+                    ></span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-2xl shrink-0">🛡️</span>
@@ -194,13 +295,18 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-2xl shrink-0">💎</span>
-                  <span><strong>Mantienes un seguro de vida activo</strong></span>
+                  <span
+                    ><strong>Mantienes un seguro de vida activo</strong></span
+                  >
                 </li>
               </ul>
             </div>
 
-            <p class="text-lg font-semibold text-primary-1 mt-6 bg-primary-2/10 p-4 rounded-lg border-l-4 border-primary-2">
-              Con un IUL, aprovechas el crecimiento del S&P 500 sin arriesgar tu dinero cuando el mercado cae.
+            <p
+              class="text-lg font-semibold text-primary-1 mt-6 bg-primary-2/10 p-4 rounded-lg border-l-4 border-primary-2"
+            >
+              Con un IUL, aprovechas el crecimiento del S&P 500 sin arriesgar tu
+              dinero cuando el mercado cae.
             </p>
           </div>
         </div>
@@ -208,46 +314,72 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
       <!-- Beneficios Reales -->
       <div class="mb-16">
-        <h2 class="text-3xl font-display font-bold text-primary-1 mb-8">Beneficios reales para ti y tu familia</h2>
-        
+        <h2 class="text-3xl font-display font-bold text-primary-1 mb-8">
+          Beneficios reales para ti y tu familia
+        </h2>
+
         <div class="space-y-6">
           <div class="flex gap-4">
             <div class="text-4xl shrink-0">❤️</div>
             <div>
-              <h3 class="text-xl font-bold text-primary-1 mb-2">Crecimiento garantizado sin riesgo de pérdida.</h3>
-              <p class="text-slate-700">Tu dinero crece año tras año con seguridad.</p>
+              <h3 class="text-xl font-bold text-primary-1 mb-2">
+                Crecimiento garantizado sin riesgo de pérdida.
+              </h3>
+              <p class="text-slate-700">
+                Tu dinero crece año tras año con seguridad.
+              </p>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="text-4xl shrink-0">🏠</div>
             <div>
-              <h3 class="text-xl font-bold text-primary-1 mb-2">Protección para tu familia.</h3>
-              <p class="text-slate-700">En caso de fallecimiento, tus seres queridos reciben una suma asegurada inmediata.</p>
+              <h3 class="text-xl font-bold text-primary-1 mb-2">
+                Protección para tu familia.
+              </h3>
+              <p class="text-slate-700">
+                En caso de fallecimiento, tus seres queridos reciben una suma
+                asegurada inmediata.
+              </p>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="text-4xl shrink-0">💵</div>
             <div>
-              <h3 class="text-xl font-bold text-primary-1 mb-2">Ahorro disponible en vida.</h3>
-              <p class="text-slate-700">Puedes acceder a tu dinero si enfrentas una enfermedad grave, accidente o necesitas fondos de emergencia.</p>
+              <h3 class="text-xl font-bold text-primary-1 mb-2">
+                Ahorro disponible en vida.
+              </h3>
+              <p class="text-slate-700">
+                Puedes acceder a tu dinero si enfrentas una enfermedad grave,
+                accidente o necesitas fondos de emergencia.
+              </p>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="text-4xl shrink-0">👨‍👩‍👧‍👦</div>
             <div>
-              <h3 class="text-xl font-bold text-primary-1 mb-2">Herencia con propósito.</h3>
-              <p class="text-slate-700">Dejas un legado económico a tus hijos, sin depender de bancos o préstamos.</p>
+              <h3 class="text-xl font-bold text-primary-1 mb-2">
+                Herencia con propósito.
+              </h3>
+              <p class="text-slate-700">
+                Dejas un legado económico a tus hijos, sin depender de bancos o
+                préstamos.
+              </p>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="text-4xl shrink-0">📋</div>
             <div>
-              <h3 class="text-xl font-bold text-primary-1 mb-2">Ventajas fiscales.</h3>
-              <p class="text-slate-700">Tu dinero crece libre de impuestos mientras esté dentro del plan.</p>
+              <h3 class="text-xl font-bold text-primary-1 mb-2">
+                Ventajas fiscales.
+              </h3>
+              <p class="text-slate-700">
+                Tu dinero crece libre de impuestos mientras esté dentro del
+                plan.
+              </p>
             </div>
           </div>
         </div>
@@ -255,30 +387,33 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
       <!-- Comparación IUL vs Cuenta Bancaria -->
       <div class="mb-16">
-        <h2 class="text-3xl font-display font-bold text-primary-1 mb-8">¿Por qué elegir IUL en lugar de una cuenta bancaria?</h2>
-        
+        <h2 class="text-3xl font-display font-bold text-primary-1 mb-8">
+          ¿Por qué elegir IUL en lugar de una cuenta bancaria?
+        </h2>
+
         <div class="overflow-x-auto">
           <table class="w-full border-collapse">
             <thead>
               <tr class="bg-primary-1 text-white">
-                <th class="border-2 border-primary-1/20 p-4 text-left font-bold">Característica</th>
-                <th class="border-2 border-primary-1/20 p-4 text-center font-bold">Plan IUL</th>
-                <th class="border-2 border-primary-1/20 p-4 text-center font-bold">Cuenta Bancaria</th>
+                <th class="border-2 border-primary-1/20 p-4 text-left font-bold"
+                  >Característica</th
+                >
+                <th
+                  class="border-2 border-primary-1/20 p-4 text-center font-bold"
+                  >Plan IUL</th
+                >
+                <th
+                  class="border-2 border-primary-1/20 p-4 text-center font-bold"
+                  >Cuenta Bancaria</th
+                >
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-secondary-1 hover:bg-secondary-1/80 transition-colors">
-                <td class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1">Crecimiento del dinero</td>
-                <td class="border-2 border-primary-1/10 p-4 text-center">
-                  <span class="bg-primary-2/20 text-primary-2 font-bold px-3 py-1 rounded-full inline-block">Hasta 12%+ anual</span>
-                </td>
-                <td class="border-2 border-primary-1/10 p-4 text-center">
-                  <span class="bg-slate-300/20 text-slate-600 font-bold px-3 py-1 rounded-full inline-block">0.5% - 2% anual</span>
-                </td>
-              </tr>
-
               <tr class="bg-white hover:bg-slate-50 transition-colors">
-                <td class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1">Protección contra pérdidas</td>
+                <td
+                  class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1"
+                  >Protección contra pérdidas</td
+                >
                 <td class="border-2 border-primary-1/10 p-4 text-center">
                   <span class="text-primary-2 text-xl">✓</span>
                 </td>
@@ -287,8 +422,13 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
                 </td>
               </tr>
 
-              <tr class="bg-secondary-1 hover:bg-secondary-1/80 transition-colors">
-                <td class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1">Protección para familia</td>
+              <tr
+                class="bg-secondary-1 hover:bg-secondary-1/80 transition-colors"
+              >
+                <td
+                  class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1"
+                  >Protección para familia</td
+                >
                 <td class="border-2 border-primary-1/10 p-4 text-center">
                   <span class="text-primary-2 text-xl">✓</span>
                 </td>
@@ -298,7 +438,10 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
               </tr>
 
               <tr class="bg-white hover:bg-slate-50 transition-colors">
-                <td class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1">Acceso a fondos en vida</td>
+                <td
+                  class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1"
+                  >Acceso a fondos en vida</td
+                >
                 <td class="border-2 border-primary-1/10 p-4 text-center">
                   <span class="text-primary-2 text-xl">✓</span>
                 </td>
@@ -307,8 +450,13 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
                 </td>
               </tr>
 
-              <tr class="bg-secondary-1 hover:bg-secondary-1/80 transition-colors">
-                <td class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1">Ventajas fiscales</td>
+              <tr
+                class="bg-secondary-1 hover:bg-secondary-1/80 transition-colors"
+              >
+                <td
+                  class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1"
+                  >Ventajas fiscales</td
+                >
                 <td class="border-2 border-primary-1/10 p-4 text-center">
                   <span class="text-primary-2 text-xl">✓</span>
                 </td>
@@ -318,7 +466,10 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
               </tr>
 
               <tr class="bg-white hover:bg-slate-50 transition-colors">
-                <td class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1">Heredable sin impuestos</td>
+                <td
+                  class="border-2 border-primary-1/10 p-4 font-semibold text-primary-1"
+                  >Heredable sin impuestos</td
+                >
                 <td class="border-2 border-primary-1/10 p-4 text-center">
                   <span class="text-primary-2 text-xl">✓</span>
                 </td>
@@ -327,13 +478,24 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
                 </td>
               </tr>
 
-              <tr class="bg-primary-1/5 hover:bg-primary-1/10 transition-colors">
-                <td class="border-2 border-primary-1/10 p-4 font-bold text-primary-1">Resultado después de 20 años</td>
+              <tr
+                class="bg-primary-1/5 hover:bg-primary-1/10 transition-colors"
+              >
+                <td
+                  class="border-2 border-primary-1/10 p-4 font-bold text-primary-1"
+                  >Resultado después de 20 años</td
+                >
                 <td class="border-2 border-primary-1/10 p-4 text-center">
-                  <span class="bg-primary-2/20 text-primary-2 font-bold px-3 py-1 rounded-full inline-block">Capital + Legado</span>
+                  <span
+                    class="bg-primary-2/20 text-primary-2 font-bold px-3 py-1 rounded-full inline-block"
+                    >Capital + Legado</span
+                  >
                 </td>
                 <td class="border-2 border-primary-1/10 p-4 text-center">
-                  <span class="bg-slate-300/20 text-slate-600 font-bold px-3 py-1 rounded-full inline-block">Solo intereses mínimos</span>
+                  <span
+                    class="bg-slate-300/20 text-slate-600 font-bold px-3 py-1 rounded-full inline-block"
+                    >Solo intereses mínimos</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -342,37 +504,54 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
       </div>
 
       <!-- CTA Intermedia -->
-      <div class="bg-primary-2/10 border-l-4 border-primary-2 p-8 rounded-r-lg mb-16">
-        <h3 class="text-2xl font-bold text-primary-1 mb-3">La mejor herencia es la tranquilidad, no las deudas.</h3>
-        <p class="text-lg text-slate-700 font-semibold">❤️ Agenda tu asesoría gratuita hoy y protege a los tuyos.</p>
+      <div
+        class="bg-primary-2/10 border-l-4 border-primary-2 p-8 rounded-r-lg mb-16"
+      >
+        <h3 class="text-2xl font-bold text-primary-1 mb-3">
+          La mejor herencia es la tranquilidad, no las deudas.
+        </h3>
+        <p class="text-lg text-slate-700 font-semibold">
+          ❤️ Agenda tu asesoría gratuita hoy y protege a los tuyos.
+        </p>
       </div>
 
       <!-- Formulario de Cotización -->
       <div class="mb-16">
-        <h2 class="text-3xl font-display font-bold text-primary-1 mb-2">Cotiza tu plan personalizado</h2>
-        <p class="text-slate-600 mb-8">Completa el formulario y recibirás una propuesta adaptada a tus necesidades</p>
+        <h2 class="text-3xl font-display font-bold text-primary-1 mb-2">
+          Cotiza tu plan personalizado
+        </h2>
+        <p class="text-slate-600 mb-8">
+          Completa el formulario y recibirás una propuesta adaptada a tus
+          necesidades
+        </p>
 
-        <form class="bg-secondary-1 p-8 rounded-xl shadow-lg space-y-6" id="cotizacionForm">
-          
+        <form
+          class="bg-secondary-1 p-8 rounded-xl shadow-lg space-y-6"
+          id="cotizacionForm"
+        >
           <!-- Fila 1: Nombre y Edad -->
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label for="nombre" class="block font-bold text-primary-1 mb-2">Nombre Completo *</label>
-              <input 
-                type="text" 
-                id="nombre" 
-                name="nombre" 
+              <label for="nombre" class="block font-bold text-primary-1 mb-2"
+                >Nombre Completo *</label
+              >
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
                 required
                 placeholder="Tu nombre completo"
                 class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors"
               />
             </div>
             <div>
-              <label for="edad" class="block font-bold text-primary-1 mb-2">Edad *</label>
-              <input 
-                type="number" 
-                id="edad" 
-                name="edad" 
+              <label for="edad" class="block font-bold text-primary-1 mb-2"
+                >Edad *</label
+              >
+              <input
+                type="number"
+                id="edad"
+                name="edad"
                 required
                 placeholder="Tu edad"
                 min="18"
@@ -385,22 +564,26 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
           <!-- Fila 2: Ocupación e Ingreso -->
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label for="ocupacion" class="block font-bold text-primary-1 mb-2">Ocupación *</label>
-              <input 
-                type="text" 
-                id="ocupacion" 
-                name="ocupacion" 
+              <label for="ocupacion" class="block font-bold text-primary-1 mb-2"
+                >Ocupación *</label
+              >
+              <input
+                type="text"
+                id="ocupacion"
+                name="ocupacion"
                 required
                 placeholder="Tu ocupación o profesión"
                 class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors"
               />
             </div>
             <div>
-              <label for="ingreso" class="block font-bold text-primary-1 mb-2">Ingreso Mensual Aproximado *</label>
-              <input 
-                type="number" 
-                id="ingreso" 
-                name="ingreso" 
+              <label for="ingreso" class="block font-bold text-primary-1 mb-2"
+                >Ingreso Mensual Aproximado *</label
+              >
+              <input
+                type="number"
+                id="ingreso"
+                name="ingreso"
                 required
                 placeholder="$0"
                 min="0"
@@ -411,10 +594,12 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
           <!-- Objetivo Principal -->
           <div>
-            <label for="objetivo" class="block font-bold text-primary-1 mb-2">Objetivo Principal *</label>
-            <select 
-              id="objetivo" 
-              name="objetivo" 
+            <label for="objetivo" class="block font-bold text-primary-1 mb-2"
+              >Objetivo Principal *</label
+            >
+            <select
+              id="objetivo"
+              name="objetivo"
               required
               class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors"
             >
@@ -430,22 +615,26 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
           <!-- Fila 3: Teléfono y Email -->
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label for="telefono" class="block font-bold text-primary-1 mb-2">Teléfono *</label>
-              <input 
-                type="tel" 
-                id="telefono" 
-                name="telefono" 
+              <label for="telefono" class="block font-bold text-primary-1 mb-2"
+                >Teléfono *</label
+              >
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
                 required
                 placeholder="(713) 000-0000"
                 class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors"
               />
             </div>
             <div>
-              <label for="email" class="block font-bold text-primary-1 mb-2">Email *</label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
+              <label for="email" class="block font-bold text-primary-1 mb-2"
+                >Email *</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
                 required
                 placeholder="tu@email.com"
                 class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors"
@@ -455,10 +644,12 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
           <!-- Mejor Horario -->
           <div>
-            <label for="horario" class="block font-bold text-primary-1 mb-2">¿Cuál es el mejor horario para contactarte? *</label>
-            <select 
-              id="horario" 
-              name="horario" 
+            <label for="horario" class="block font-bold text-primary-1 mb-2"
+              >¿Cuál es el mejor horario para contactarte? *</label
+            >
+            <select
+              id="horario"
+              name="horario"
               required
               class="w-full px-4 py-3 border-2 border-primary-1/20 rounded-lg focus:border-primary-1 focus:outline-none transition-colors"
             >
@@ -472,30 +663,38 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 
           <!-- Botón Submit -->
           <div class="pt-4">
-            <button 
+            <button
               type="submit"
               class="w-full bg-primary-1 hover:bg-primary-1/90 text-white font-bold py-4 rounded-lg transition-all shadow-lg hover:shadow-xl text-lg"
             >
               Recibir mi cotización personalizada
             </button>
             <p class="text-xs text-slate-500 text-center mt-3">
-              * Campos obligatorios. Tu información será tratada de forma confidencial.
+              * Campos obligatorios. Tu información será tratada de forma
+              confidencial.
             </p>
           </div>
         </form>
       </div>
 
       <!-- CTA Final -->
-      <div class="bg-linear-to-r from-primary-1 to-primary-1/80 text-white p-8 rounded-xl text-center">
-        <h2 class="text-2xl font-display font-bold mb-4">¿Preguntas? Estamos aquí para ayudarte</h2>
+      <div
+        class="bg-linear-to-r from-primary-1 to-primary-1/80 text-white p-8 rounded-xl text-center"
+      >
+        <h2 class="text-2xl font-display font-bold mb-4">
+          ¿Preguntas? Estamos aquí para ayudarte
+        </h2>
         <p class="text-lg text-white/90 mb-6">
-          Nuestro equipo responde todas tus dudas sin compromiso. Únicamente queremos que tomes la mejor decisión para tu familia.
+          Nuestro equipo responde todas tus dudas sin compromiso. Únicamente
+          queremos que tomes la mejor decisión para tu familia.
         </p>
-        <a href="/#contacto" class="inline-block bg-primary-2 hover:bg-primary-2/90 text-white font-semibold px-8 py-3 rounded-lg transition-all">
+        <a
+          href="/#contacto"
+          class="inline-block bg-primary-2 hover:bg-primary-2/90 text-white font-semibold px-8 py-3 rounded-lg transition-all"
+        >
           Contactar ahora
         </a>
       </div>
-
     </div>
   </section>
 
@@ -503,20 +702,24 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
 </Layout>
 
 <script>
-  const form = document.getElementById('cotizacionForm') as HTMLFormElement | null;
+  const form = document.getElementById(
+    "cotizacionForm"
+  ) as HTMLFormElement | null;
 
   if (form) {
-    form.addEventListener('submit', async (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       const formData = new FormData(form);
       const data = Object.fromEntries(formData);
 
       // Aquí puedes enviar los datos a tu backend o servicio de email
-      console.log('Datos del formulario:', data);
+      console.log("Datos del formulario:", data);
 
       // Mostrar mensaje de éxito
-      alert('¡Gracias! Tu cotización ha sido recibida. Nos pondremos en contacto pronto.');
+      alert(
+        "¡Gracias! Tu cotización ha sido recibida. Nos pondremos en contacto pronto."
+      );
       form.reset();
     });
   }
@@ -529,4 +732,3 @@ import FloatingDots from "../components/decorations/FloatingDots.astro";
     margin: 0;
   }
 </style>
-

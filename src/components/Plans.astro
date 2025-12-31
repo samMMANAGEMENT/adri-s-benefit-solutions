@@ -1,70 +1,159 @@
 ---
-import GeometricShapes from './decorations/GeometricShapes.astro';
-import GoldenMesh from './decorations/GoldenMesh.astro';
-import FloatingDots from './decorations/FloatingDots.astro';
+import GeometricShapes from "./decorations/GeometricShapes.astro";
+import GoldenMesh from "./decorations/GoldenMesh.astro";
+import FloatingDots from "./decorations/FloatingDots.astro";
 ---
 
 <section id="planes" class="section bg-secondary-1 relative overflow-hidden">
   <!-- Decoraciones de fondo -->
-  <GeometricShapes variant="hexagons" class="absolute top-0 left-0 w-full h-full opacity-40" />
+  <GeometricShapes
+    variant="hexagons"
+    class="absolute top-0 left-0 w-full h-full opacity-40"
+  />
   <GoldenMesh class="absolute bottom-0 right-0 w-2/3 h-2/3 opacity-20" />
   <FloatingDots />
-  
+
   <div class="container-responsive relative z-10">
     <h2 class="text-center text-2xl sm:text-3xl font-display font-bold mb-10">
       Nuestros planes para ti y tu familia
     </h2>
     <div class="grid gap-6 sm:gap-8 lg:grid-cols-2">
       <!-- Plan 1 -->
-      <article class="bg-white rounded-xl shadow-sm p-6 sm:p-8 text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary-2">
+      <article
+        class="bg-white rounded-xl shadow-sm p-6 sm:p-8 text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary-2"
+      >
         <div class="inline-block p-3 bg-primary-2/10 rounded-full mb-4">
-          <svg class="w-8 h-8 text-primary-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+          <svg
+            class="w-8 h-8 text-primary-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
           </svg>
         </div>
-        <h3 class="text-xl sm:text-2xl font-display font-bold text-primary-1">Plan de Retiro (IUL)</h3>
-        <p class="text-slate-600 mb-4">Crece tu dinero con protección inteligente</p>
-        <div class="relative inline-block my-6 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64">
-          <div class="absolute inset-0 bg-primary-2/20 rounded-lg blur-xl"></div>
+        <h3 class="text-xl sm:text-2xl font-display font-bold text-primary-1">
+          Plan de Retiro (IUL)
+        </h3>
+        <p class="text-slate-600 mb-4">
+          Crece tu dinero con protección inteligente
+        </p>
+        <span class="text-primary-2 mb-4">
+          Tu dinero no se invierte directamente en la bolsa. Se acredita segun
+          el desempeño del indice S&P500, con proteccion contra perdidas.
+        </span>
+        <div
+          class="relative inline-block my-6 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64"
+        >
+          <div class="absolute inset-0 bg-primary-2/20 rounded-lg blur-xl">
+          </div>
           <div class="absolute inset-0 bg-white/50 rounded-lg"></div>
-          <img src="/plan_image_ul.jpg" alt="Plan IUL" class="relative rounded-lg w-full h-full object-cover" loading="lazy" />
+          <img
+            src="/family_togheter.webp"
+            alt="Plan IUL"
+            class="relative rounded-lg w-full h-full object-cover"
+            loading="lazy"
+          />
         </div>
         <h4 class="font-semibold mb-3 text-primary-2">✦ Beneficios</h4>
         <ol class="text-left inline-block text-slate-700 space-y-2">
-          <li><span class="font-bold text-primary-2">01.</span> Crecimiento potencial vinculado a índices</li>
-          <li><span class="font-bold text-primary-2">02.</span> Protección contra pérdidas de mercado</li>
-          <li><span class="font-bold text-primary-2">03.</span> Beneficios en vida disponibles</li>
-          <li><span class="font-bold text-primary-2">04.</span> Flexibilidad en aportes</li>
+          <li>
+            <span class="font-bold text-primary-2">01.</span> Crecimiento potencial
+            vinculado a índices
+          </li>
+          <li>
+            <span class="font-bold text-primary-2">02.</span> Protección contra pérdidas
+            de mercado
+          </li>
+          <li>
+            <span class="font-bold text-primary-2">03.</span> Beneficios en vida disponibles
+          </li>
+          <li>
+            <span class="font-bold text-primary-2">04.</span> Flexibilidad en aportes
+          </li>
         </ol>
         <div class="mt-6">
-          <a href="/plan-retiro" class="btn-primary">Quiero saber cómo crece mi dinero</a>
+          <a href="/plan-retiro" class="btn-primary"
+            >Quiero saber cómo crece mi dinero</a
+          >
         </div>
       </article>
 
       <!-- Plan 2 -->
-      <article class="bg-white rounded-xl shadow-sm p-6 sm:p-8 text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary-2">
+      <article
+        class="bg-white rounded-xl shadow-sm p-6 sm:p-8 text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary-2"
+      >
         <div class="inline-block p-3 bg-primary-2/10 rounded-full mb-4">
-          <svg class="w-8 h-8 text-primary-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+          <svg
+            class="w-8 h-8 text-primary-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            ></path>
           </svg>
         </div>
-        <h3 class="text-xl sm:text-2xl font-display font-bold text-primary-1">Plan Funerario</h3>
-        <p class="text-slate-600 mb-4">Protege a tu familia hoy</p>
-        <div class="relative inline-block my-6 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64">
-          <div class="absolute inset-0 bg-primary-2/20 rounded-lg blur-xl"></div>
-          <img src="/plan_image_funeral.jpeg" alt="Plan Funerario" class="relative rounded-lg w-full h-full object-cover" />
+        <h3 class="text-xl sm:text-2xl font-display font-bold text-primary-1">
+          Plan Funerario
+        </h3>
+        <p class="text-slate-600 mb-4">
+          Tranquilidad hoy para quienes más amas
+        </p>
+        <p class="text-primary-2 mb-4">
+          Evita decisiones difíciles y gastos inesperados en los momentos más
+          duros.
+        </p>
+        <div
+          class="relative inline-block my-6 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64"
+        >
+          <div class="absolute inset-0 bg-primary-2/20 rounded-lg blur-xl">
+          </div>
+          <img
+            src="/plan_image_funeral.jpeg"
+            alt="Plan Funerario"
+            class="relative rounded-lg w-full h-full object-cover"
+          />
         </div>
         <h4 class="font-semibold mb-3 text-primary-2">✦ Beneficios</h4>
         <ol class="text-left inline-block text-slate-700 space-y-2">
-          <li><span class="font-bold text-primary-2">01.</span> Cobertura inmediata</li>
-          <li><span class="font-bold text-primary-2">02.</span> Asistencia integral a la familia</li>
-          <li><span class="font-bold text-primary-2">03.</span> Costos transparentes</li>
-          <li><span class="font-bold text-primary-2">04.</span> Red de servicios confiables</li>
-          <li><span class="font-bold text-primary-2">05.</span> Acompañamiento humano</li>
-          <li><span class="font-bold text-primary-2">06.</span> Sin letras pequeñas</li>
+          <li>
+            <span class="font-bold text-primary-2">01.</span> Cobertura inmediata,
+            sin esperas innecesarias
+          </li>
+          <li>
+            <span class="font-bold text-primary-2">02.</span> Apoyo total a tu familia
+            en momentos difíciles
+          </li>
+          <li>
+            <span class="font-bold text-primary-2">03.</span> Costos claros y accesibles,
+            sin sorpresas
+          </li>
+          <li>
+            <span class="font-bold text-primary-2">04.</span> Red confiable de servicios
+            funerarios
+          </li>
+          <li>
+            <span class="font-bold text-primary-2">05.</span> Acompañamiento humano
+            y cercano
+          </li>
+          <li>
+            <span class="font-bold text-primary-2">06.</span> Sin letras pequeñas
+            ni complicaciones
+          </li>
         </ol>
         <div class="mt-6">
-          <a href="/plan-funerario" class="btn-primary">Quiero proteger a mi familia hoy</a>
+          <a href="/plan-funerario" class="btn-primary"
+            >Quiero tranquilidad para mi familia</a
+          >
         </div>
       </article>
     </div>
